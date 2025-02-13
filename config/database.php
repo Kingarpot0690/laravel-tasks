@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('AZURE_MYSQL_HOST', '127.0.0.1'),
             'port' => env('AZURE_MYSQL_PORT', '3306'),
-            'database' => env(AZURE_MYSQL_DBNAME', 'wetwew69-db'),
+            'database' => env('AZURE_MYSQL_DBNAME', 'wetwew69-db'),
             'username' => env('AZURE_MYSQL_USERNAME', 'lltkkpckpu'),
             'password' => env('AZURE_MYSQL_PASSWORD', 'WVlFqjvlg$Kz$oDT'),
             'unix_socket' => env('DB_SOCKET', ''),
