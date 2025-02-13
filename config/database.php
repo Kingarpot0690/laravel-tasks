@@ -48,9 +48,9 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('AZURE_MYSQL_HOST', '127.0.0.1'),
             'port' => env('AZURE_MYSQL_PORT', '3306'),
-            'database' => env('AZURE_MYSQL_DBNAME', 'wetwew69-db'),
-            'username' => env('AZURE_MYSQL_USERNAME', 'lltkkpckpu'),
-            'password' => env('AZURE_MYSQL_PASSWORD', 'WVlFqjvlg$Kz$oDT'),
+            'database' => env('AZURE_MYSQL_DBNAME', 'forge'),
+            'username' => env('AZURE_MYSQL_USERNAME', 'forge'),
+            'password' => env('AZURE_MYSQL_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -139,6 +139,7 @@ return [
 
         'cache' => [
             'scheme' => 'tls',
+            'url' => env('REDIS_URL')
             'host' => env('AZURE_REDIS_HOST', '127.0.0.1'),
             'username' => env('REDIS_USERNAME'),
             'password' => env('AZURE_REDIS_PASSWORD'),
